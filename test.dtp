@@ -8,8 +8,8 @@
 		['A0', '', 1.0, 0.0, '', False], 
 		['A1', '', 1.0, 0.0, '', False], 
 		['A2', '', 1.0, 0.0, '', False]]</analog_inputs>
-	<blocktable>[['1', 4, '', False, 1], 
-		['2', 2, '', False, 1], 
+	<blocktable>[['1', 2, '', False, 1], 
+		['2', 2, '', False, 0], 
 		['3', 2, '', False, 1]]</blocktable>
 	<code>''</code>
 	<data_rate>1000</data_rate>
@@ -18,7 +18,7 @@
 	<gaze_feedback_mode>0</gaze_feedback_mode>
 	<instructions>''</instructions>
 	<instructions_default>u''</instructions_default>
-	<last_modified>'2020-09-28  05:15 PM'</last_modified>
+	<last_modified>'2020-10-07  03:45 PM'</last_modified>
 	<loadtable>[]</loadtable>
 	<loadtable_defs>[]</loadtable_defs>
 	<name>'test'</name>
@@ -26,9 +26,9 @@
 	<random_seed>1</random_seed>
 	<targetfor_ep>('Handle', ['Active', 0, -44], True)</targetfor_ep>
 	<targetfor_exo>['Between Fingertips on Midline', [30, 90], True]</targetfor_exo>
-	<targettable>[[7.5, 0.0, 1.0, '000255128', '', '', '', 0.0, 0.0], 
-		[-7.5, 0.0, 1.0, '000255128', '', '', '', 0.0, 0.0], 
-		[-5.0, -2.0, 2.0, '128255255', '', '', '', 0.3, 0.0], 
+	<targettable>[[10.0, 0.0, 1.0, '000255128', '', '', '', 0.0, 0.0], 
+		[-10.0, 0.0, 1.0, '000255128', '', '', '', 0.0, 0.0], 
+		[0.0, -2.5, 3.0, '128255255', '', '', '', 6.0, 0.3], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
@@ -36,8 +36,8 @@
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
-		[0.0, 10.0, 5.0, '255255255', 'Flex your triceps as much as you can!', 'Relax!', '', 0.0, 0.0], 
-		[0.0, 10.0, 5.0, '255255255', 'Flex your triceps to reach the line.', 'Relax!', '', 0.0, 0.0], 
+		[0.0, 10.0, 5.0, '255255255', 'Flex your triceps as much as you can!', 'Relax!', 'Repeat with the same arm!', 2.0, 0.0], 
+		[0.0, 10.0, 5.0, '255255255', 'Flex your triceps to reach the line.', 'Relax!', 'Repeat with the other arm!', 2.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
@@ -46,7 +46,7 @@
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0], 
-		[-5.0, -8.0, 0.0, '255255255', '0', '', '', 0.0, 0.0], 
+		[0.0, -8.0, 0.0, '255255255', '0', '', '', 2.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '0.0', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '0.0', 0.0, 0.0], 
 		[0.0, 0.0, 0.0, '0', '', '', '0.0', 0.0, 0.0], 
@@ -92,16 +92,16 @@
 		[0.0, 0.0, 0.0, '0', '', '', '0.0', 0.0, 0.0]]</targettable>
 	<targettable_defs>[['X', 'float'], ['Y', 'float'], ['Vrad', 'float'], ['Color', 'colour'], ['Instruct Text', 'label'], ['Rest Text', 'label'], ['Match Text', 'label'], ['Height', 'float'], ['Stroke Width', 'float']]</targettable_defs>
 	<tasklevelparams>[['K_JOINT_ASSESSED', '2'], 
-		['K_MVC', '0'], 
+		['K_MVC', '0.00'], 
 		['K_MVC_TEXT_TGT', '21'], 
 		['K_ARM1_TGT', '1'], 
 		['K_ARM2_TGT', '2'], 
 		['K_BAR_TGT', '3']]</tasklevelparams>
 	<tasklevelparams_defs>[['K_ARM1_TGT', 'integer'], ['K_ARM2_TGT', 'integer'], ['K_JOINT_ASSESSED', 'integer'], ['K_BAR_TGT', 'integer'], ['K_MVC_TEXT_TGT', 'integer'], ['K_MVC', 'float']]</tasklevelparams_defs>
-	<tptable>[[1, 11, 100.0, 0.5, 500, 1000, 2000, 1, 10000, 1, 500], 
-		[0, 12, 50.0, 1.0, 500, 1000, 2000, 1, 10000, 1, 500], 
-		[0, 12, 50.0, 1.0, 500, 1000, 2000, 2, 10000, 0, 500]]</tptable>
-	<tptable_defs>[['MVC trial', 'int'], ['Instruct Target', 'target'], ['Goal Force (Pct)', 'float'], ['Minimum Force Threshold', 'float'], ['Initial Duration', 'int'], ['Force Hold Time', 'int'], ['Rest Time', 'int'], ['Test Arm', 'int'], ['Max Trial Time', 'int'], ['Feedback', 'int'], ['Inter-Trial Interval', 'int']]</tptable_defs>
+	<tptable>[[1, 11, 100.0, 1.0, 500, 1000, 2000, 1, 10000, 1, 500], 
+		[2, 11, 50.0, 1.0, 500, 1000, 2000, 1, 10000, 1, 500], 
+		[2, 12, 50.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500]]</tptable>
+	<tptable_defs>[['Trial Type', 'int'], ['Instruct Target', 'target'], ['Goal Force (Pct)', 'float'], ['Minimum Force Threshold', 'float'], ['Initial Duration', 'int'], ['Force Hold Time', 'int'], ['Rest Time', 'int'], ['Test Arm', 'int'], ['Max Trial Time', 'int'], ['Feedback', 'int'], ['Inter-Trial Interval', 'int']]</tptable_defs>
 	<use_repeat_trial_flag>0</use_repeat_trial_flag>
 	<version>3.8</version>
 	<video>''</video>
