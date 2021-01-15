@@ -18,7 +18,7 @@
 	<gaze_feedback_mode>0</gaze_feedback_mode>
 	<instructions>''</instructions>
 	<instructions_default>u''</instructions_default>
-	<last_modified>'2020-12-15  05:29 PM'</last_modified>
+	<last_modified>'2021-01-15  02:23 PM'</last_modified>
 	<loadtable>[]</loadtable>
 	<loadtable_defs>[]</loadtable_defs>
 	<name>'test'</name>
@@ -96,16 +96,17 @@
 		['K_MVC', '5.00'], 
 		['K_SUR_TGT', '4'], 
 		['K_MVC_TEXT_TGT', '21'], 
+		['K_NEUTRAL_FDBK', '0'], 
 		['K_ARM1_TGT', '1'], 
 		['K_ARM2_TGT', '2'], 
 		['K_BAR_TGT', '3']]</tasklevelparams>
-	<tasklevelparams_defs>[['K_ARM1_TGT', 'integer'], ['K_ARM2_TGT', 'integer'], ['K_JOINT_ASSESSED', 'integer'], ['K_BAR_TGT', 'integer'], ['K_MVC_TEXT_TGT', 'integer'], ['K_MVC', 'float'], ['K_SUR_TGT', 'integer'], ['K_SUR_TEXT_TGT', 'integer']]</tasklevelparams_defs>
-	<tptable>[[1, 11, 100.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500, 0], 
-		[2, 12, 25.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500, 0], 
-		[2, 12, 50.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500, 0], 
-		[2, 12, 75.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500, 0], 
-		[2, 12, 100.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500, 0]]</tptable>
-	<tptable_defs>[['Trial Type', 'int'], ['Instruct Target', 'target'], ['Goal Force (Pct)', 'float'], ['Minimum Force Threshold', 'float'], ['Initial Duration', 'int'], ['Force Hold Time', 'int'], ['Rest Time', 'int'], ['Test Arm', 'int'], ['Max Trial Time', 'int'], ['Feedback', 'int'], ['Inter-Trial Interval', 'int'], ['Audio Feedback Type', 'int']]</tptable_defs>
+	<tasklevelparams_defs>[['K_ARM1_TGT', 'integer'], ['K_ARM2_TGT', 'integer'], ['K_JOINT_ASSESSED', 'integer'], ['K_BAR_TGT', 'integer'], ['K_MVC_TEXT_TGT', 'integer'], ['K_MVC', 'float'], ['K_SUR_TGT', 'integer'], ['K_SUR_TEXT_TGT', 'integer'], ['K_NEUTRAL_FDBK', 'integer']]</tasklevelparams_defs>
+	<tptable>[[1, 11, 100.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500], 
+		[2, 12, 25.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500], 
+		[2, 12, 50.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500], 
+		[2, 12, 75.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500], 
+		[2, 12, 100.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500]]</tptable>
+	<tptable_defs>[['Trial Type', 'int'], ['Instruct Target', 'target'], ['Goal Force (Pct)', 'float'], ['Minimum Force Threshold', 'float'], ['Initial Duration', 'int'], ['Force Hold Time', 'int'], ['Rest Time', 'int'], ['Test Arm', 'int'], ['Max Trial Time', 'int'], ['Feedback', 'int'], ['Inter-Trial Interval', 'int']]</tptable_defs>
 	<use_repeat_trial_flag>0</use_repeat_trial_flag>
 	<version>3.8</version>
 	<video>''</video>
