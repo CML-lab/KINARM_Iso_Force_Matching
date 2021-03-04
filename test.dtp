@@ -7,8 +7,11 @@
 		['Bar_Height', '', 1.0, 0.0, '', True], 
 		['A0', '', 1.0, 0.0, '', False], 
 		['A1', '', 1.0, 0.0, '', False], 
-		['A2', '', 1.0, 0.0, '', False]]</analog_inputs>
-	<blocktable>[['2,3,4,5', 2, '', True, 1], 
+		['BicepEMG', '', 1.0, 0.0, '', True], 
+		['TricepEMG', '', 1.0, 0.0, '', True], 
+		['SurveyResp', '', 1.0, 0.0, '', True], 
+		['HoldSuccess', '', 1.0, 0.0, '', True]]</analog_inputs>
+	<blocktable>[['2', 2, '', True, 4], 
 		['2', 2, '', False, 0], 
 		['3', 2, '', False, 1]]</blocktable>
 	<code>''</code>
@@ -18,7 +21,7 @@
 	<gaze_feedback_mode>0</gaze_feedback_mode>
 	<instructions>''</instructions>
 	<instructions_default>u''</instructions_default>
-	<last_modified>'2021-01-15  02:23 PM'</last_modified>
+	<last_modified>'2021-03-04  12:59 PM'</last_modified>
 	<loadtable>[]</loadtable>
 	<loadtable_defs>[]</loadtable_defs>
 	<name>'test'</name>
@@ -42,7 +45,7 @@
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0, ''], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0, ''], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0, ''], 
-		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0, ''], 
+		[0.0, 5.0, 5.0, '255255255', '', '', '', 2.0, 0.0, ''], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0, ''], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0, ''], 
 		[0.0, 0.0, 0.0, '0', '', '', '', 0.0, 0.0, ''], 
@@ -102,7 +105,7 @@
 		['K_BAR_TGT', '3']]</tasklevelparams>
 	<tasklevelparams_defs>[['K_ARM1_TGT', 'integer'], ['K_ARM2_TGT', 'integer'], ['K_JOINT_ASSESSED', 'integer'], ['K_BAR_TGT', 'integer'], ['K_MVC_TEXT_TGT', 'integer'], ['K_MVC', 'float'], ['K_SUR_TGT', 'integer'], ['K_SUR_TEXT_TGT', 'integer'], ['K_NEUTRAL_FDBK', 'integer']]</tasklevelparams_defs>
 	<tptable>[[1, 11, 100.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500], 
-		[2, 12, 25.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500], 
+		[2, 12, 25.0, 1.0, 2000, 6000, 2000, 2, 20000, 1, 500], 
 		[2, 12, 50.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500], 
 		[2, 12, 75.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500], 
 		[2, 12, 100.0, 1.0, 500, 1000, 2000, 2, 10000, 1, 500]]</tptable>
